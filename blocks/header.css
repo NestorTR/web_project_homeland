@@ -1,17 +1,13 @@
 .header {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  align-items: center;
 }
 
 .header__logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   max-width: 254.84px;
   height: 68.94px;
   padding-top: 34px;
-  margin-left: 520px;
 }
 
 @media screen and (max-width: 768px) {
