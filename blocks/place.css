@@ -64,6 +64,7 @@
 .place__button {
   text-align: center;
   align-self: baseline;
+  text-decoration: none;
   grid-area: button;
   max-width: 289px;
   padding: 13px 20px;
@@ -99,6 +100,32 @@
 
   .place__website {
     white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .place__website {
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .place {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 35px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title website"
+      "image image"
+      "paragraphs paragraphs"
+      "button button";
+  }
+  .place__button {
+    margin: 0 auto 0 auto;
+  }
+
+  .place__image {
+    box-shadow: none;
   }
 }
 
